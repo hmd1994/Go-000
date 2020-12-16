@@ -12,7 +12,7 @@ type Dao struct {
 
 func (dao *Dao) UpdateDb() (int, error) {
 	//dao层返回错误
-	return 0 ,errors.Wrap(sql.ErrNoRows,"dao error")
+	return 0 ,errors.Wrap(sql.ErrNoRows,"biz error")
 }
 type Service struct {
 	Dao
